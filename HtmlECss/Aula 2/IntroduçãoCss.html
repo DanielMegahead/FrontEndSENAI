@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução CSS</title>
+    <style>
+        .subtitulos {
+            color: rgb(255, 0, 0);
+            /* FONT-SIZE = TAMANHO DE FONTE */
+            font-size: 13pt;
+            /* FONT-FAMILY = FAMILIA DA FONTE FONTE */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        /*texto = TAG */
+        img {
+            width: 300px;
+            /*boder-radius = arredondar elementos */
+            border-radius: 100px;
+            /*border = Largura da borda, tipo e cor */
+            border: 2px solid blueviolet ;
+            float: none;
+        }
+        /* #textio = ID */
+        #tituloPrincipal{
+            text-decoration: underline;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        .negrito{
+            /*FONT - WEIGHT = AO PESO DA FONTE */
+            font-weight: bold;
+            font-size: 25pt;
+        }
+
+        /* ID - ELEMENTO ÚNICO */
+        /* CLASS - CONJUNTO DE ELEMENTOS */
+
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tituloPrincipal">TITULO PRINCIPAL</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio dolor nobis repellat enim alias aspernatur quod, velit nemo atque illo fugit reprehenderit delectus? Optio culpa quisquam eligendi asperiores repellendus.</p>
+    <h2 class="subtitulos">TITULO SECUDARIO 1</h2> 
+    <h2 style="color: rgb(255, 255, 255);background-color: rgb(0, 0, 0);"> TITULO SECUDARIO 2</h2> 
+    <h2 class="subtitulos negrito">TITULO SECUDARIO 3</h2> 
+    <h2 class="subtitulos">TITULO SECUDARIO 4</h2>
+
+    <img src="Images/paisagem1.jpg.jpg" alt="paisagem1">
+    <img src="Images/paisagem2.jpg.jpg" alt="paisagem2">
+    <img src="Images/paisagem3.jpg.jpg" alt="paisagem3">
+</body>
+</html>
