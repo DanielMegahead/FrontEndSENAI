@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#cabecalho{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 3px 0px;
+}
+
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+
+}
+
+#banner{
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    border-radius: 0px;
+    background-image: url("images/biscoito.jpg");
+    background-size: cover;
+    background-position: center;
+}
