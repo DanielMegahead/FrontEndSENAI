@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#cabecalho {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0px;
+}
+
+#cabecalho img{
+    height: 25px;
+    margin-left: 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 20px;
+}
+
+#banner{
+    width: 50px%;
+    height: 500px;
+    margin: 0px;
+    border-radius: 10px;
+    /* background-image =  puxa a imagem */
+    background-image: url("images/lula.jpg");
+    /* background-position =  controla a posição foco do background */
+    background-position: center;
+    /* background-size =  controla as dimensões da imagem */
+    background-size: cover;
+    /* background-repeat =  controla as repetições */
+    background-repeat: no-repeat;
+    
+}
+#conteudo{
+    width: 100%;
+    /*margin / padding*/
+    /* 1 valor = todos os lados */
+    /* 2 valores = eixo y (cima e baixo), eixo x (direita e esquerda) */
+    /* 4 valores = sentido horário (cima, direita, baixo, esquerda) */
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;    
+    background-color: rgb(255, 0, 0);
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
