@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/* geral */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:"Abel";
+}
+
+section{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+}
+
+/* header */
+
+header{
+    width: 100%;
+}
+
+#banner{
+    height: 400px;
+    justify-content: center;
+    background-image: url(../Imagens/ImagensGeral/4566499575_1cc803f1bd_o.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(../Imagens/logo/logo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 100px;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* TOPICOS */
+
+#topicos{
+    gap: 20px;
+    justify-content: center;
+}
+
+.topicoGrupo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.topicoImagem{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 100%;
+    margin-top: 40px;
+}
+
+.topicoGrupo button{
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+}
