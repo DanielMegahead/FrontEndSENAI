@@ -1,15 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 /* geral */
+/* font-face = anexa uma fonte ao projeto */
+@font-face {
+    /* font-family = define o nome da fonte instalada */
+    font-family: Roboto;
+    /* src = onde essa fonte está localizada */
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: motherland;
+    src: url(../motherland/motherland.ttf);
+}
 *{
     margin: 0%;
     padding: 0%;
-    font-family:"Abel";
+    font-family:"Roboto";
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: motherland;
+}
 section{
     width: 100%;
     padding: 10px 0px;
     display: flex;
+}
+
+.tituloSection{
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtituloSection{
+    text-align: center;
+    font-size: 10pt;
+    color: rgb(49, 49, 49);
 }
 
 /* header */
@@ -63,10 +90,12 @@ nav a{
 
 .topicoGrupo{
     width: 30%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     gap: 20px;
     padding: 10px 0px;
 }
@@ -74,7 +103,9 @@ nav a{
 .topicoImagem{
     width: 100px;
     height: 100px;
-    background-color: rgb(41, 41, 41);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 100%;
     margin-top: 40px;
 }
@@ -86,4 +117,125 @@ nav a{
     border-radius: 3px;
     padding: 6px;
     cursor: pointer;
+}
+
+#topicoDicas{
+    background-image: url(../Imagens/ImagensGeral/dica.png);
+}
+
+#topicoNoticias{
+    background-image: url(../Imagens/ImagensGeral/noticias.png);
+}  
+
+#topicoEquipamentos{
+    background-image: url(../Imagens/ImagensGeral/equipamentos.png);
+}
+
+/* AGENDA */
+#agenda{
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    gap: 20px;
+}
+
+#seletores{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#seletores select{
+    width: 300px;
+    height: 30px;
+}
+
+#eventos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.evento{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    font-size: 8pt;
+}
+
+.dataEvento{
+    width: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.evento button{
+    border: none;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.descEvento{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+}
+
+/* email */
+
+#emailSecao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#email{
+    width: 80%;
+    height: 30px;
+}
+
+#cadastrar{
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color:rgb(41, 41, 41);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.redes img{
+    width: 100%;
 }
