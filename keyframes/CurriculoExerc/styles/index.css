@@ -23,24 +23,5 @@ main{
     background-color: beige;
 }
 
-nav{
-    height: 90%;
-    width: 80%;
-    background-color: white;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-.informacoes{
-    color: rgb(0, 0, 0);
-    display: flex;
-    background-color: rgb(221, 221, 221);
-    gap: 20px;
-    flex-direction: column;
-}
-
 
 
