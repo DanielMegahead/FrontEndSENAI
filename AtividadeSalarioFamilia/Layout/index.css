@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    align-items: center;
+    text-align: center;
+    color: gray;
+}
+
+.calcular{
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(3, 209, 199);
+    color: white;
+    display: inline-block;
+    align-items: center;
+    padding: 2px;
+    box-shadow: 3px 3px rgb(110, 110, 110);
+    border: none;
+
+}
+
+#calcular1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    
+
+
+input{
+    border: none;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    width: 350px;
+}
