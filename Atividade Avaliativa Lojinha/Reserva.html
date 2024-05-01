@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA - CAMPAGNE</title>
+    <link rel="stylesheet" href="styles/Reserva.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                <a href="paginaPrincipal.html">
+                    <img src="images/logo1.png" alt="logo">
+                </a>
+                </li>
+                <li><a href="paginaPrincipal.html">Home</a></li>
+                <li><a href="#">Cardapio</a></li>
+            </ul>
+        </nav>
+        <a href="Login.html">
+            <button type="button">Login</button>
+        </a>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="container">
+                <h1>Reserva Campagne</h1>
+                <form action="processar_reserva.php" method="POST">
+                    <label for="data">Data da Reserva:</label>
+                    <input type="date" id="data" name="data" required>
+                    
+                    <label for="pessoas">Número de Pessoas:</label>
+                    <input type="number" id="pessoas" name="pessoas" min="1" required>
+                    
+                    <label for="mensagem">Mensagem Adicional:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                    
+                    <button type="submit">Enviar Reserva</button>
+                </form>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer>
+        <h3>TODOS OS DIREITOS RESERVADOS AO CAMPAGNE RESTAURANTE</h3>
+    </footer>
+    
+</body>
+</html>
