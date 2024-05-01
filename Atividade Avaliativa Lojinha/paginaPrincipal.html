@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMPAGNE RESTAURANTE</title>
-    <link rel="stylesheet" href="styles/Login.css">
+    <link rel="stylesheet" href="styles/paginaPrincipal.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -20,20 +20,44 @@
                 <li><a href="#">Cardapio</a></li>
             </ul>
         </nav>
-        <a href="Login.html" id="loginButton">
-            <button type="button">Login</button>
-        </a>
+        <div id="loginButton">
+            <a href="Login.html" id="loginButton">
+                <button type="button">Login</button>
+            </a>
+        </div>
         <a href="Reserva.html">
             <button type="button">Faça sua Reserva</button>
         </a>
     </header>
     <main>
-        <section id="banner">
-            <iframe width="50%" height="380" src="images/videoplayback.mp4"></iframe>
+        <div id="banner">
+            <h1>SEJA BEM-VINDO AO CAMPAGNE RESTAURANTE</h1>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/giCRFuDhcfQ?si=btQSFdv59yPM97V1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <section id="historia">
+            <div id="agrupamentoHistoria">
+                <div class="textoHistoria">
+                    <h3>NOSSA HISTÓRIA</h3>
+                    <br>
+                    <p>Recém inaugurado, o Campagne é um restaurante de cozinha brasileira que surge em meio ao charme e aconchego de São Sebastião das Águas Claras (Macacos). Erguido em um bucólico espaço verde, o restaurante proporciona a harmonia entre o aconchego e a boa gastronomia, onde muitos dos ingredientes usados em seus pratos são produzidos no local. 
+                    <br><br>Direcionado a um público sensível a desfrutar de uma experiência gastronômica completa, o restaurante começa a ser descoberto e apreciado pelos amantes da gastronomia. A excepcional culinária, o ambiente cheio de charme e aconchego, oótimo atendimento e a seleção musical diferenciada compõem a atmosfera mágica que tanto tem encantado aqueles que já descobriram esse oásis em Macacos.
+                    <br><br>Defumar o próprio salmão, produzir a própria farinha de mandioca para a sua farofa chic-chic, a própria linguiça, o sorvete de suas sobremesas, assim como seus patês, sua mostarda e seu presunto é materializar toda a técnica, mas, principalmente, todo o amor que envolve este projeto. Das entradas aos pratos principais e sobremesas, o cardápio tem como referência produtos do campo, mesclando técnicas francesas e internacionais aos aromas e sabores da cozinha brasileira.</p>
+                    <br>
+                    <h3>Chef/Proprietário : Rafael Tocchetto</h3>
+                </div>
+                <div class="imagemHistoria">
+                    <img src="images/chefe.png" alt="chefe">
+                </div>
+            </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="mapBox">
+            <div class="mapBoxConteudo">
+                <h1>LOCALIZAÇÃO</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.0885122596214!2d-43.926887724769756!3d-20.04673498136803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6a3154cffa2b5%3A0x5e4ccfb7009fdd34!2sCampagne%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1714571632577!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
         <h3>TODOS OS DIREITOS RESERVADOS AO CAMPAGNE RESTAURANTE</h3>
