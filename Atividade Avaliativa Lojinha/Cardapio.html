@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN - CAMPAGNE</title>
-    <link rel="stylesheet" href="styles/Login.css">
+    <link rel="stylesheet" href="styles/cardapio.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -20,21 +20,27 @@
                 <li><a href="Cardapio.html">Cardapio</a></li>
             </ul>
         </nav>
+        <div id="loginButton">
+            <a href="Login.html" id="loginButton">
+                <button type="button">Login</button>
+            </a>
+        </div>
         <a href="Reserva.html">
             <button type="button">Faça sua Reserva</button>
         </a>
     </header>
     <main>
         <section id="banner">
-            <div class="login-box">
-                <h2>Login</h2>
-                <form action="#">
-                    <input type="text" placeholder="E-mail" required>
-                    <input type="password" placeholder="Senha" required>
-                    <input type="submit" value="Login">
-                </form>
-                <p>Não tem uma conta? <a href="Cadastro.html">Cadastre-se</a></p>
+                <h2>CARDAPIO</h2>
+            <div id="agrupamentoCartoes">
+                <div class="cartao" id="cartao1"></div>
+                <div class="cartao" id="cartao2"></div>
+                <div class="cartao" id="cartao3"></div>
+                <div class="cartao" id="cartao4"></div>
+                <div class="cartao" id="cartao5"></div>
+                <div class="cartao" id="cartao6"></div>
             </div>
+            <h2>UMA VERDADEIRA EXPERIÊNCIA GASTRONÔMICA</h2>
         </section>
     </main>
     <footer>
