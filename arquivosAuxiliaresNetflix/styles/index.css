@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: Netflix;
+    src: url(../netflixAssets/Netflix/fonte/netflix-sans-font/NetflixSans-Light.otf);
+}
+
+/* HEADER */
+
+body{
+    background-color: black;
+    
+}
+
+header{
+    width: 100%;
+    background-color: black;
+
+}
+
+header a{
+    color: white;   
+    text-decoration: none;
+    text-align: center;
+
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header li{
+    display: flex;
+    align-items: center;
+    font-family: 'Netflix';
+}
+
+#logo{
+    height: 100px;
+    display: flex;
+    margin-left: 50px;
+}
+nav{
+    display: flex;
+}
+
+/* SERIES TV */
+
+main{
+    width: 100%;
+    
+}
+
+#serie{
+    width: 100%;
+}
+
+#serie h3{
+    color: white;
+    margin-left: 20px;
+    font-family: 'Netflix';
+}
+
+#agrupamentoSerie{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.serieItem{
+    width: 341px;
+    height: 191px;
+    background-size: cover;
+}
+
+#serie1{
+    background-image: url(../images/images/1cb27a06e8fdc5f8dfd3a69921769cd66b8f3131.png);
+}
+
+#serie2{
+    background-image: url(../images/images/a36e70d6c29ad878a0d5a326275caaac686e0ab2.png);
+}
+
+#serie3{
+    background-image: url(../images/images/fea7743f8847095dd0fb87c07acdac75022968ce.png);
+}
+
+#serie4{
+    background-image: url(../images/images/a79531694f0e0da51e7511a0be38ae92f6993244.png);
+}
+
+
