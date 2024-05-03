@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Josefin Sans";
+}
+
+main{
+    width: 100%;
+
+}
+
+.signup-box {
+    width: 400px;
+    margin: 190px auto;
+    background-color: rgb(184, 184, 184);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--corPrimaria);
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(13, 197, 96);
+}
+
+.signup-box input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup-box p {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.signup-box a:hover {
+    text-decoration: underline;
+}
+
+textarea{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(13, 197, 96);
+
+}
+
+.signup-box h2 {
+    margin-bottom: 20px;
+    color: rgb(44, 44, 44);
+    text-align: center;
+}
+
+.signup-box h3 {
+    margin-bottom: 20px;
+    color: rgb(44, 44, 44);
+    text-align: center;
+}
