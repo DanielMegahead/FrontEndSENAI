@@ -7,6 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style/index.css">
   <link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 </head>
 <body>
     <!-- E-COMMERCE -->
@@ -16,18 +20,21 @@
                 <p class="navbar-text-fluid">O E-COMMERCE DE CAFÉ MAIS COMPLETO DO BRASIL</p>
             </div>
             <div class="col-md-3 text-right mt-1 d-flex justify-content-end" id="botoes">
-                <a href="#" class="btn mr-3 ">Faça seu Pedido</a>
-                <a href="https://api.whatsapp.com/send?phone=+5561998613123" class="btn ">Compre pelo WhatsApp</a>
+                <a href="#" class="btn mr-3">Faça seu Pedido</a>
+                <a href="https://api.whatsapp.com/send?phone=+5561998613123" class="btn">Compre pelo WhatsApp</a>
             </div>
         </div>
     </div>
     <header>
         <!-- CABEÇALHO -->
-        <nav class="navbar navbar-expand-lg navbar" id="cabecalho">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="cabecalho">
             <div class="container-fluid">
-              <a class="navbar-brand " href="#">
+              <a class="navbar-brand" href="#">
                   <img src="images/logonome.png" alt="logo">
               </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
               <div class="collapse navbar-collapse justify-content-end p-2" id="navbarNav1">
                 <ul class="navbar-nav">
                   <li class="nav-item">
@@ -76,13 +83,195 @@
                     <span class="visually-hidden"></span>
                 </button>
             </div>
-        </section>
-        <section>
             <div class="imagemPix">
               <img src="images/pix.png" class="img-fluid" alt="imgPix">
             </div>
-        </section>
+          </section>
+          <div class="animate__animated animate__pulse animate__infinite	infinite container-fluid text-center p-5 " id="ofertas">
+            <h1>OFERTAS DA SEMANA 20%OFF</h1>
+          </div>
+        <section class="text-info d-flex justify-content-center gap-5" id="catalogo">
+              <!-- CAFÉ TRADICIONAL -->
+              <div id="card-1" class="card border border-danger p-2" style="width: 18rem;">
+                <img src="images/cafenormal.png" class="card-img-top" alt="café tradicional">
+                 <div class="card-body text-center" id="text1">
+                   <h4 class="text">Café Tradicional</h4>
+                   <p class="card-text lh-sm align-items-center">O café tradicional, apreciado globalmente, tem aroma envolvente e sabor marcante. Preparado de diversas formas, é uma paixão para os amantes da bebida.</p>
+                     <button type="button" class="btn btn-danger color-button tp-3" data-bs-toggle="modal" data-bs-target="#cafetradicional">Ver mais</button>
+                 </div>
+             </div>
+             <!-- SMOOTH LATTE -->
+             <div id="card-2" class="card border border-danger p-2" style="width: 18rem;">
+              <img src="images/latte.png" class="card-img-top" alt="latte">
+               <div class="card-body text-center" id="text1">
+                 <h4 class="text">Smooth Latte</h4>
+                 <p class="card-text lh-sm">Smooth Latte: espresso e leite vaporizado, suave e cremoso. Perfeito para quem prefere café menos intenso, quente ou frio, com sabores como baunilha ou caramelo.</p>
+                   <button type="button" class="btn btn-danger color-button tb-3" data-bs-toggle="modal" data-bs-target="#smoothlatte">Ver mais</button>
+               </div>
+           </div>
+           <!-- CHÁ INGLÊS -->
+           <div id="card-3" class="card border border-danger p-2" style="width: 18rem;">
+            <img src="images/english tea.png" class="card-img-top" alt="chá inglês">
+             <div class="card-body text-center" id="text1">
+               <h4 class="text">Chá Inglês</h4>
+               <p class="card-text lh-sm">O chá inglês, tradição do Reino Unido, é feito com chá preto, como Earl Grey, servido com leite e, às vezes, açúcar. O "afternoon tea" inclui sanduíches, scones e doces, símbolo de sofisticação.</p>
+                 <button type="button" class="btn btn-danger color-button tp-3" data-bs-toggle="modal" data-bs-target="#chaingles">Ver mais</button>
+             </div>
+         </div>
+         <!-- LATTE MACCHIATO -->
+         <div id="card-4" class="card border border-danger p-2" style="width: 18rem;">
+          <img src="images/latte macchiato.png" class="card-img-top mt-2" alt="latte macchiato">
+           <div class="card-body text-center" id="text1">
+             <h4 class="text">Latte Macchiato</h4>
+             <p class="card-text lh-sm">O Latte Macchiato é uma bebida elegante de café, com leite vaporizado "manchado" por espresso. Suave e cremosa, é ideal para apreciadores de café leve.</p>
+               <button type="button" class="btn btn-danger color-button tb-3" data-bs-toggle="modal" data-bs-target="#lattemacchiato">Ver mais</button>
+           </div>
+       </div>
+
+       <!-- PÃO DE QUEIJO -->
+       <div id="card-5" class="card border border-danger p-2" style="width: 18rem;">
+        <img src="images/pao de queijo.png" class="card-img-top mt-2" alt="pão de queijo">
+         <div class="card-body text-center" id="text1">
+           <h4 class="text">Pão de Queijo</h4>
+           <p class="card-text lh-sm">O pão de queijo, típico de Minas Gerais, é feito com polvilho, ovos, óleo e queijo, assado até dourar e ficar crocante por fora, macio por dentro. Ideal para cafés e lanches.</p>
+             <button type="button" class="btn btn-danger color-button tb-3" data-bs-toggle="modal" data-bs-target="#paodequeijo">Ver mais</button>
+         </div>
+       </div>         
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+<footer>
+  <div class="container-fluid - justify-content-center text-center p-3" id="footer1">
+    <p>&copy; 2024 Monkey Coffee Shop. Todos os direitos reservados.</p>
+    <p>Endereço: Rua Café Aromático, 123 - Cidade do Café - Tel: (55) 1234-5678</p>
+  </div>
+</footer>
+<div id="modais">
+
+  <!-- MODAL CAFÉ TRADICIONAL -->
+  <div class="modal fade" id="cafetradicional" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Café tradicional</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- imagem -->
+          <img class="w-100" src="images/cafenormal.png" alt="cafe tradicional">
+          <!-- valor -->
+          <p>Feito com grãos cuidadosamente selecionados e meticulosamente torrados, cada xícara oferece um equilíbrio perfeito entre aroma robusto e sabor suave.</p>  
+          <h4 class="text">R$3,00</h4>
+        </div>
+        <!-- botão modal -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-black">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM  -->
+
+          <!-- SMOOTH LATTE -->
+          <div class="modal fade" id="smoothlatte" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Smooth Latte</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- imagem -->
+                  <img class="w-100" src="images/latte.png" alt="Smooth Latte">
+                  <!-- valor -->
+                  <p>Acompanhado de uma leve camada de espuma, este clássico favorito é a escolha perfeita para aqueles que apreciam o equilíbrio perfeito entre café e leite.</p>  
+                  <h4 class="text">R$5,00</h4>
+                </div>
+                <!-- botão modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-black">Adicionar ao carrinho</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIM  -->
+
+                  <!-- CHÁ INGLÊS -->
+  <div class="modal fade" id="chaingles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Chá Inglês</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- imagem -->
+          <img class="w-100" src="images/english tea.png" alt="chá inglês">
+          <!-- valor -->
+          <p>Feito com uma seleção cuidadosa de folhas de chá preto de qualidade premium, cada gole é uma experiência revigorante e reconfortante.</p>  
+          <h4 class="text">R$3,50</h4>
+        </div>
+        <!-- botão modal -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-black">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM  -->
+
+          <!-- LATTE MACCHIATO -->
+          <div class="modal fade" id="lattemacchiato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Latte Macchiato</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- imagem -->
+                  <img class="w-100" src="images/latte macchiato.png" alt="...">
+                  <!-- valor -->
+                  <p>Cada gole revela uma experiência única, onde a doçura do leite encontra a riqueza do café, em um equilíbrio perfeito de sabores. Delicie-se com uma indulgência refinada que é verdadeiramente inesquecível.</p>  
+                  <h4 class="text">R$6,00</h4>
+                </div>
+                <!-- botão modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-black">Adicionar ao carrinho</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIM  -->
+
+          <!-- PÃO DE QUEIJO -->
+          <div class="modal fade" id="paodequeijo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Pão de Queijo Caseiro</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- imagem -->
+                  <img class="w-100" src="images/pao de queijo.png" alt="pão de queijo">
+                  <!-- valor -->
+                  <p>Feito com ingredientes simples e amorosos, cada mordida é uma explosão de textura macia e queijo derretido.</p>  
+                  <h4 class="text">R$2,00 (cinco unidades)</h4>
+                </div>
+                <!-- botão modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-black">Adicionar ao carrinho</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIM  -->              
+</div>
 </html>

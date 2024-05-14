@@ -42,5 +42,32 @@
     color: var(--marromEscuro);
 }
 
+#catalogo{
+    background-color: var(--branco);
+    font-family: rubikItalic;
+}
 
+#catalogo a{
+    color: var(--rosa);
+}
+
+#conheca{
+    background-color: var(--branco);
+}
+
+#footer1{
+    background-color: var(--branco);
+
+}
+
+#text1{
+    color: var(--marromEscuro);
+}
+
+#ofertas{
+    color: red;
+    background-color: var(--branco);
+    font-weight: bold;
+    font-family: rubikItalic;
+}
 
