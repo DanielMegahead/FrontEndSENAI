@@ -1,0 +1,72 @@
+@font-face {
+    font-family: rubikItalic;
+    src: url(../fonts/static/Rubik-MediumItalic.ttf);
+}
+
+:root{
+    --marromEscuro : #390c0d;
+    --marromClaro : #893322;
+    --marromClaro2 : #d88f6c;
+    --branco : #fbf7ed;
+    --rosaClaro : #fef1ea;
+    --rosa : #ff0068;
+}
+
+/* CABEÇALHO */
+
+#botoes a{
+    color: var(--branco);
+}
+
+#cabecalho1{
+    background-color: var(--rosa);
+}
+
+#cabecalho{
+    height: 150px;
+    background-color: var(--branco);
+}
+
+.navbar-brand img{
+    width: 400px;
+    height: 200px;
+  }
+  
+#navbarNav1 a{
+    font-family: rubikItalic;
+    font-size: 23px;
+    color: var(--marromEscuro);
+  }
+
+#carrinho{
+    color: var(--marromEscuro);
+}
+
+#catalogo{
+    background-color: var(--branco);
+    font-family: rubikItalic;
+}
+
+#catalogo a{
+    color: var(--rosa);
+}
+
+#conheca{
+    background-color: var(--branco);
+}
+
+#footer1{
+    background-color: var(--branco);
+
+}
+
+#text1{
+    color: var(--marromEscuro);
+}
+
+#ofertas{
+    color: red;
+    background-color: var(--branco);
+    font-weight: bold;
+    font-family: rubikItalic;
+}

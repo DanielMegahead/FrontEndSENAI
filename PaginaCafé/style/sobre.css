@@ -1,0 +1,45 @@
+@font-face {
+    font-family: rubikItalic;
+    src: url(../fonts/static/Rubik-MediumItalic.ttf);
+}
+
+:root{
+    --marromEscuro : #390c0d;
+    --marromClaro : #893322;
+    --marromClaro2 : #d88f6c;
+    --branco : #fbf7ed;
+    --rosaClaro : #fef1ea;
+    --rosa : #ff0068;
+}
+
+/* CABEÇALHO */
+
+#cabecalho1{
+    background-color: var(--rosa);
+}
+
+#cabecalho{
+    background-color: var(--branco);
+}
+  
+#navbarNav1 a{
+    font-family: rubikItalic;
+    font-size: 23px;
+    color: var(--marromEscuro);
+  }
+
+#carrinho{
+    color: var(--marromEscuro);
+}
+
+main{
+    background-color: var(--rosaClaro);
+}
+
+#historia{
+    color: var(--rosa);
+}
+
+#sobre{
+    color: var(--marromEscuro);
+}
