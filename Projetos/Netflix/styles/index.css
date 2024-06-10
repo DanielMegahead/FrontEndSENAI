@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    top: 0%;
+}
+
+/* cores */
+:root{
+    --white: #FFFFFF;
+    --red: #DB0000;
+    --black: #000000;
+    --grey: #564D4D;
+    --wine: #831010;
+    --darkgrey: #515353;
+    --comedy:#D06AFE;
+    --action:#7052FF;
+    --drama:#ecec55;
+    --scifi:#68DA3D;
+    --romance:#FF7361;
+    --thriller:#FF81FF;
+    --horror:#8973fa;
+
+}
+
+/* fontes */
+@font-face {
+    font-family:"netflix" ;
+    src: url(../fonts/netflix-sans-font/NetflixSans-Regular.otf);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+body {
+    background-color: var(--black);
+}
+
+/* rodapé */
+footer{
+    background-color: var(--darkgrey);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* cabeçalho */
+#logo {
+    width: 6%;
+    height: 25px;
+    margin: 15px 15px;
+}
+
+nav {
+    background-color: var(--black);
+    width:100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.item {
+    display: inline-block;
+}
+.item a{
+    text-decoration: none;
+    color: white;
+    font-family: "netflix";
+
+    padding: 5px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+}
+
+#perfil {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+#profile {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+#seta, #lupa {
+    margin: 20px 5px;
+    height: 20px;
+}
+
+#profile {
+    font-family: "netflix";
+    color: var(--white);
+    display: flex;
+    margin-right: 20px;
+
+}
+
+#user {
+    margin: 20px;
+    padding-right: 5px;
+}
+
+/* categorias */
+#categorias {
+    font-family: "netflix";
+    color: var(--white);
+    margin-right: auto;
+
+}
+#selection{
+    display: flex;
+    gap: 5px;
+}
+#categorias h3 {
+    text-align: left;
+    margin-bottom: 5px;
+
+}
+.type {
+    width: 150px;
+    height: 90px;
+    font-family: "netflix";
+    display: flex;
+    justify-content: center;
+}
+
+.type p {
+    margin-top: 30px;
+}
+
+
+#comedia {
+    background-color: var(--comedy);
+}
+
+#acao {
+    background-color: var(--action);
+}
+
+#drama {
+    background-color: var(--drama);
+}
+
+#scifi {
+    background-color: var(--scifi);
+}
+
+#romance {
+    background-color: var(--romance);
+}
+
+#thriller {
+    background-color: var(--thriller);
+}
+
+#terror {
+    background-color: var(--horror);
+}
+
+/* banner fim do site */
+.descricao {
+    position: absolute;
+    top: 30%;
+    font-family: "netflix";
+    background-image: linear-gradient(to bottom, var(--black), rgba(0, 0, 0, 0));
+    color: var(--white);
+}
+
+#bannerFim img {
+    width: 100%;
+}
