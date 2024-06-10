@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0%;
     top: 0%;
 }
 
 /* cores */
-:root{
+:root {
     --white: #FFFFFF;
     --red: #DB0000;
     --black: #000000;
     --grey: #564D4D;
     --wine: #831010;
     --darkgrey: #515353;
-    --comedy:#D06AFE;
-    --action:#7052FF;
-    --drama:#ecec55;
-    --scifi:#68DA3D;
-    --romance:#FF7361;
-    --thriller:#FF81FF;
-    --horror:#8973fa;
+    --comedy: #D06AFE;
+    --action: #7052FF;
+    --drama: #ecec55;
+    --scifi: #68DA3D;
+    --romance: #FF7361;
+    --thriller: #FF81FF;
+    --horror: #8973fa;
 
 }
 
 /* fontes */
 @font-face {
-    font-family:"netflix" ;
+    font-family: "netflix";
     src: url(../fonts/netflix-sans-font/NetflixSans-Regular.otf);
 }
 
@@ -34,12 +34,13 @@ main {
     align-items: center;
 
 }
+
 body {
     background-color: var(--black);
 }
 
 /* rodapé */
-footer{
+footer {
     background-color: var(--darkgrey);
     color: var(--white);
     text-align: center;
@@ -56,7 +57,7 @@ footer{
 
 nav {
     background-color: var(--black);
-    width:100%;
+    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -66,7 +67,8 @@ nav {
 .item {
     display: inline-block;
 }
-.item a{
+
+.item a {
     text-decoration: none;
     color: white;
     font-family: "netflix";
@@ -103,7 +105,8 @@ header li {
     margin-left: auto;
 }
 
-#seta, #lupa {
+#seta,
+#lupa {
     margin: 20px 5px;
     height: 20px;
 }
@@ -128,15 +131,18 @@ header li {
     margin-right: auto;
 
 }
-#selection{
+
+#selection {
     display: flex;
     gap: 5px;
 }
+
 #categorias h3 {
     text-align: left;
     margin-bottom: 5px;
 
 }
+
 .type {
     width: 150px;
     height: 90px;
