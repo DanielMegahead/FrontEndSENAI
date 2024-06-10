@@ -1,198 +1,180 @@
-* {
-    margin: 0%;
-    top: 0%;
-}
-
-/* cores */
-:root {
-    --white: #FFFFFF;
-    --red: #DB0000;
-    --black: #000000;
-    --grey: #564D4D;
-    --wine: #831010;
-    --darkgrey: #515353;
-    --comedy: #D06AFE;
-    --action: #7052FF;
-    --drama: #ecec55;
-    --scifi: #68DA3D;
-    --romance: #FF7361;
-    --thriller: #FF81FF;
-    --horror: #8973fa;
-
-}
-
-/* fontes */
 @font-face {
-    font-family: "netflix";
-    src: url(../fonts/netflix-sans-font/NetflixSans-Regular.otf);
+    font-family: NetflixSans ;
+    src: url(../fonts/NetflixSans-Bold.otf);
 }
+@font-face {
+    font-family: NetflixMed;
+    src: url(../fonts/NetflixSans-Medium.otf);
+}
+@font-face {
+    font-family: NetflixBold;
+    src: url(../fonts/NetflixSans-Bold.otf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: NetflixSans;
+    overflow-y: none;
 
-main {
-    width: 100%;
+}
+:root{
+    --CorPrimaria: red;
+    --CorSecundaria: white;
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.cabecalho{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-body {
-    background-color: var(--black);
-}
-
-/* rodapé */
-footer {
-    background-color: var(--darkgrey);
-    color: var(--white);
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-}
-
-/* cabeçalho */
-#logo {
-    width: 6%;
-    height: 25px;
-    margin: 15px 15px;
-}
-
-nav {
-    background-color: var(--black);
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-
-}
-
-.item {
-    display: inline-block;
-}
-
-.item a {
-    text-decoration: none;
-    color: white;
-    font-family: "netflix";
-
-    padding: 5px;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-    gap: 20px
-}
-
-header {
     justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;  
     align-items: center;
+    width: 95%;
 }
-
-header li {
+#menu{
     display: flex;
-    align-items: center;
-}
-
-#perfil {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    padding-right: 10px;
-}
-
-#profile {
-    display: flex;
-    align-items: flex-start;
-    margin-left: auto;
-}
-
-#seta,
-#lupa {
-    margin: 20px 5px;
-    height: 20px;
-}
-
-#profile {
-    font-family: "netflix";
-    color: var(--white);
-    display: flex;
-    margin-right: 20px;
-
-}
-
-#user {
-    margin: 20px;
-    padding-right: 5px;
-}
-
-/* categorias */
-#categorias {
-    font-family: "netflix";
-    color: var(--white);
-    margin-right: auto;
-
-}
-
-#selection {
-    display: flex;
-    gap: 5px;
-}
-
-#categorias h3 {
+    margin: 10px;
     text-align: left;
-    margin-bottom: 5px;
-
+    gap: 50px;
+    float: left;
+    margin-right: 20%;
+    
 }
-
-.type {
-    width: 150px;
-    height: 90px;
-    font-family: "netflix";
+#iconPesquisar{
+   background-color: var(--CorSecundaria);
+}
+input{
+    padding-left: 2%;
+    margin: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    float: left;
+    background-color: transparent;
+    font-size: 18px;
+    
+}
+#imgUsuario{
     display: flex;
-    justify-content: center;
+    margin: 10px;
+}
+/* Acrescentar um texo dentro da imagem banner */
+#banner{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    font-size: 32px;
+    top: 80px;
+    width: 100%;
+    
+}
+#texto{
+    font: NetflixBold;
+    position: absolute;
+    flex-direction: column;
+    top: 20%;
+    left: 0%;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    text-align: left;
+    width: 50%;
+    font-size: 20px;
+    gap: 8px;
+}
+#narcos{
+    font: NetflixBold;
+    font-size: 100px;
+}
+#carrossel{
+    margin-top: 80px;
+    margin-left: 10px;
+}
+#carrossel2{
+    margin: 10px;
+}
+.conteiner{
+    margin: 20px;
+    display: grid;
+    width: 1;
+    justify-content: space-around;
+
+}
+.conteiner h2{
+    display: flex;
+    text-align: center;
+
+}
+h2, p, a{
+    color: var(--CorSecundaria);
+    font: NetflixBold;
+    text-decoration: none;
 }
 
-.type p {
+
+.bannerEnd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 30px;
 }
-
-
-#comedia {
-    background-color: var(--comedy);
-}
-
-#acao {
-    background-color: var(--action);
-}
-
-#drama {
-    background-color: var(--drama);
-}
-
-#scifi {
-    background-color: var(--scifi);
-}
-
-#romance {
-    background-color: var(--romance);
-}
-
-#thriller {
-    background-color: var(--thriller);
-}
-
-#terror {
-    background-color: var(--horror);
-}
-
-/* banner fim do site */
-.descricao {
-    position: absolute;
-    top: 30%;
-    font-family: "netflix";
-    background-image: linear-gradient(to bottom, var(--black), rgba(0, 0, 0, 0));
-    color: var(--white);
-}
-
-#bannerFim img {
+.colordiv{
+    display: flex;
+    text-align: center;
     width: 100%;
+    gap: 1px;
+}
+#box1 {
+    background-color: rgb(153, 94, 201);
+    
+}
+#box2 {
+    background-color: rgb(30, 0, 163);
+  
+}
+#box3 {
+    background-color: rgb(226, 136, 0);
+  
+}
+#box4 {
+    background-color: rgb(17, 161, 65);
+  
+}
+#box5 {
+    background-color: rgb(212, 235, 12);
+  
+}
+#box6 {
+    background-color: rgb(202, 70, 8);
+  
+}
+#box7 {
+    background-color: rgb(165, 0, 180);
+    
+}
+#box8 {
+    background-color: rgb(226, 136, 0);
+    
+}
+.box{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(105, 105, 105);
+    text-align: center;
+    padding: 20px;
+    font: NetflixSans; 
 }

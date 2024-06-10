@@ -2,69 +2,104 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+    <title>NetSenai</title>
+    <link rel="shortcut icon" href="images/logo.png" type="NetSenai">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="shortcut icon" href="imgs/simbolo.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav>
-           <img src="imgs/logo.png" alt="logo netflix" id="logo">
-           <ul >
-               <li class="item"><a href="#">Home</a></li>
-               <li class="item"><a href="#">Séries TV</a></li>
-               <li class="item"><a href="#">Em alta</a></li>
-               <li class="item"><a href="#">Terror</a></li>
-               <li class="item"><a href="#">Suspense</a></li>
-               <li class="item"><a href="#">Top da Semana</a></li>
-           </ul>
-           <div id="profile"> 
-            <img src="imgs/lupa.png" alt="pesquisa" id="lupa">
-            <p id="user">Username</p>
-            <img src="imgs/perfil.png" alt="foto de perfil" id="perfil">
-            <img src="imgs/seta.png" alt="seta" id="seta">
-           </div>
-        </nav>
-    </header>
-
-    <main>
-        <div id="banner"></div>
-        <div id="series"></div>
-        <div id="alta"></div>
-        <div id="terror"></div>
-        <div id="suspense"></div>
-        <div id="top"></div>
-
-        <div id="bannerFim">
-            <img src="imgs/principal2.png" alt="filme Polonais">
-            <div class="descricao">
-                <h4>CINEMA FRANCÊS</h4>
-                <h1>POLONAIS</h1>
-                <h4>UM FILME ORIGINAL - 2018</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam aspernatur, architecto id ducimus fugiat tempore eos iusto, ex sequi ea consequatur? Cupiditate ducimus nam reprehenderit odio placeat nulla itaque alias.</p>
-            </div>    
+        <div class="cabecalho">
+        <img src="images/logo.png" alt="NETSENAI" width="200" height="63">
+        <div id="menu">
+            <a href="Home">Home</a>
+            <a href="Series">Séries</a>
+            <a href="Alta">Em Alta</a>
+            <a href="Top">Top da Semana</a>
         </div>
-
-        <div id="categorias">
-            <h3>Categorias</h3>
-            <div id="selection">
-                <div class="type" id="comedia"><p>Comédia</p></div>
-                <div class="type" id="acao"><p>Ação</p></div>
-                <div class="type" id="drama"><p>Drama</p></div>
-                <div class="type" id="scifi"><p>Sci-fi</p></div>
-                <div class="type" id="romance"><p>Romance</p></div>
-                <div class="type" id="thriller"><p>Thriller</p></div>
-                <div class="type" id="terror"><p>Terror</p></div>
-            </div>
-      </div>
-
-
+        <div class="pesquisar">
+            <a href="#"><img src="images/pesquisa.svg" alt="procurar"></a>
+            <input type="search" id="pesquisar" placeholder="Pesquisar...">
+        <div id="imgUsuario">
+            <img src="images/usuario.png" alt="imgUsuario" width="70" height="80">
+            <input type="button">
+        </div>
+    </header>
+    <main>
+        <div id="banner">
+                <a href="#"><img src="images/banner1.png" alt="" width="100%" height="575"></a>
+            <div id="texto">
+                <a href="#">Netflix ORIGINALS</a>
+                <a href="#" id="narcos">NARCOS</a>
+                <a href="#">1ª Temporada</a>
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, labore quas? Distinctio similique incidunt cum itaque maiores! Nam quia aperiam numquam fugit, rerum sint velit error eum porro eveniet? Pariatur.</a>
+                    <div id="bannerbutton">
+                        <a href="#"><button type="button">Assistir</button></a>
+                        <button type="button">+ Adicionar a lista</button>
+                    </div>
+            </div>   
+        </div>
+            <h2 id="carrossel">Séries TV</h2>
+        <div class="conteiner">
+            <div id="box">
+                <a href="#"><img src="images/serie1.png" alt="L'Art"></a>
+                <a href="#"></a><img src="images/serie2.png" alt="LaCasaDePapel">
+                <a href="#"></a><img src="images/serie3.png" alt="HouseOfCards">
+                <a href="#"></a><img src="images/serie4.png" alt="UglyDelicious">
+            </div> 
+        </div>
+            <li><h2 id="carrossel2">Em Alta</h2>
+        <div class="conteiner">
+            <div id="box">
+                <a href="#"><img src="images/alta1.png" alt="Troie">
+                <a href="#"><img src="images/alta2.png" alt="narcos">
+                <a href="#"><img src="images/alta3.png" alt="Fauda">
+                <a href="#"><img src="images/alta4.png" alt="DirtyMoney">
+            </div> 
+        </div>
+        <h2 id="carrossel2">Terror</h2>
+        <div class="conteiner">
+            <div id="box">
+                <a href="#"><img src="images/terror1.png" alt="ElChapo">
+                <a href="#"><img src="images/terror2.png" alt="TheCrown">
+                <a href="#"><img src="images/terror3.png" alt="Juventus">
+                <a href="#"><img src="images/terror4.png" alt="BlackMirror">
+            </div> 
+        <h2 id="carrossel2">Suspense</h2>
+        <div class="conteiner">
+            <div id="box">
+                <a href="#"><img src="images/suspense1.png" alt="13Reasons">
+                <a href="#"><img src="images/suspense2.png" alt="Trump">
+                <a href="#"><img src="images/suspense3.png" alt="Agents">
+                <a href="#"><img src="images/suspense4.png" alt="Unsolved">
+            </div> 
+        </div>
+        <h2 id="carrossel2">Top da Semana</h2>
+        <div class="conteiner">
+            <div id="box">
+                <a href="#"><img src="images/top1.png" alt="MarcoPolo">
+                <a href="#"><img src="images/top2.png" alt="Suburra">
+                <a href="#"><img src="images/top3.png" alt="InsideTheWorlds">
+                <a href="#"><img src="images/top4.png" alt="Comedians">
+            </div> 
+        </div>
+        <div class="bannerEnd">
+            <img src="images/banner2.png"  width="95%">
+        </div>
+        
+        <div class="colordiv">Categorias
+            <a href="#" class="box" id="box1">Comédia</a>
+            <a href="#" class="box" id="box2">Ação</a>
+            <a href="#" class="box" id="box3">Drama</a>
+            <a href="#" class="box" id="box4">Suspense</a>
+            <a href="#" class="box" id="box5">Romance</a>
+            <a href="#" class="box" id="box6">Terror</a>
+            <a href="#" class="box" id="box7">Triller</a> 
+            <a href="#" class="box" id="box8">Sci-Fi</a>
+        </div> 
     </main>
-
-    <!-- <footer>
-        @1997 - 2023 Netflix. Inc
-    </footer> -->
+    <footer>
+        <p>&copy; 1992 - 2024 NerdFlix. inc</p>
+    </footer>
 </body>
 </html>
