@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(../images/5488082.jpg);
+    line-height: 1.6;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo para os títulos */
+h1{
+    margin-bottom: 20px;
+    color: white;
+}
+h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para inputs */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilo para divs */
+div {
+    margin-bottom: 30px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 700px;
+}
+
+/* Estilo para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

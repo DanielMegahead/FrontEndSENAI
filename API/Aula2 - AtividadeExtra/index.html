@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Extra JS</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<!-- Exercicio 1 -->
+    <h1> Atividade Extra JavaScript</h1>
+
+    <div> 
+        <h2>Navegador Simples</h2>
+        <input type="text" id="endereco" placeholder="Digite o endereço">
+        <button onclick="irParaSite()">Ir</button>
+    </div>
+    <script>
+        function irParaSite() {
+            var endereco = document.getElementById("endereco").value;
+            // Verifica se o endereço começa com "http://" ou "https://"
+            if (!endereco.startsWith("http://") && !endereco.startsWith("https://")) {
+                endereco = "http://" + endereco;
+            }
+            window.open(endereco, "_blank"); // Abre o endereço em uma nova aba
+        }
+    </script>
+
+<!-- Exercicio 2 -->
+
+    <div>
+        <h2>Navegador por Escolha</h2>
+        <select id="opcoes">
+            <option value="http://www.globo.com">Globo</option>
+            <option value="http://www.terra.com.br">Terra</option>
+            <option value="http://www.uol.com.br">Uol</option>
+        </select>
+        <button onclick="acessarPagina()">Acessar</button>
+        <script>
+            function acessarPagina() {
+                var select = document.getElementById("opcoes");
+                var endereco = select.options[select.selectedIndex].value;
+                window.open(endereco, "_blank"); // Abre o endereço em uma nova aba
+            }
+        </script>
+    </div>
+
+<!-- Exercicio 3 -->
+
+    <div>
+        <h2>Validação de Usuário</h2>
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Digite o usuário"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite a senha"><br><br>
+
+        <button onclick="validarUsuario()">Entrar</button>
+        <script>
+            function validarUsuario() {
+                var usuario = document.getElementById("usuario").value;
+                var senha = document.getElementById("senha").value;
+    
+                if (usuario === "SENAI" && senha === "SENAI") {
+                    alert("Usuário válido!");
+                } else {
+                    alert("Usuário ou senha incorretos. Por favor, tente novamente.");
+                }
+            }
+        </script>
+    </div>
+
+<!-- Exercicio 4 -->
+
+    <div>
+        <h2>Cálculo de Percentual</h2>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" placeholder="Digite o valor"><br><br>
+
+        <label for="percentual">Percentual (%):</label>
+        <input type="number" id="percentual" placeholder="Digite o percentual"><br><br>
+        <script>
+            document.getElementById("percentual").addEventListener("blur", calcularPercentual);
+    
+            function calcularPercentual() {
+                var valor = parseFloat(document.getElementById("valor").value);
+                var percentual = parseFloat(document.getElementById("percentual").value);
+    
+                if (!isNaN(valor) && !isNaN(percentual)) {
+                    var resultado = valor * (percentual / 100);
+                    alert("O percentual de " + percentual + "% sobre o valor digitado é: " + resultado.toFixed(2));
+                } else {
+                    alert("Por favor, insira um valor válido e um percentual válido.");
+                }
+            }
+        </script>
+    </div>
+
+<!-- Exercicio 5 -->
+    <div>
+        <h2>Desconto ou Acréscimo</h2>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valorPercentual" placeholder="Digite o valor"><br><br>
+
+        <input type="radio" id="aVista" name="opcao" value="avista">
+        <label for="aVista">A vista</label>
+
+        <input type="radio" id="aPrazo" name="opcao" value="aprazo">
+        <label for="aPrazo">A prazo</label><br><br>
+
+        <button onclick="calcular()">Calcular</button>
+        <script>
+            function calcular() {
+                var valor = parseFloat(document.querySelector("#valorPercentual").value);
+                var opcao = document.querySelector('input[name="opcao"]:checked');
+                var opcaoid = opcao.getAttribute('id');
+
+                console.log(valor)
+                    if (opcaoid === "aVista") {
+                        var valorComDesconto = valor - (valor * 0.05);
+                        alert("Valor com desconto (a vista): R$ " + valorComDesconto.toFixed(2));
+                    } else if (opcaoid === "aPrazo") {
+                        var valorComAcrescimo = valor + (valor * 0.05);
+                        alert("Valor com acréscimo (a prazo): R$ " + valorComAcrescimo.toFixed(2));
+                    }
+            }
+        </script>
+    </div>
+
+<!-- Exercicio 6 -->
+
+    <div>
+        <h2>Reserva de Hotel</h2>
+        <label for="valorDiaria">Valor da Diária:</label>
+        <input type="number" id="valorDiaria" placeholder="Digite o valor da diária"><br><br>
+
+        <label for="quantidadeDias">Quantidade de Dias:</label>
+        <input type="number" id="quantidadeDias" placeholder="Digite a quantidade de dias"><br><br>
+
+        <label>Comodidades:</label><br>
+        <input type="checkbox" id="banheiro">
+        <label for="banheiro">Banheiro (R$ 30,00)</label><br>
+
+        <input type="checkbox" id="banheira">
+        <label for="banheira">Banheira (R$ 100,00)</label><br>
+
+        <input type="checkbox" id="tv">
+        <label for="tv">TV (R$ 40,00)</label><br>
+
+        <input type="checkbox" id="internet">
+        <label for="internet">Internet (R$ 80,00)</label><br><br>
+
+        <button onclick="calcularTotal()">Calcular Total</button>
+        <script>
+            function calcularTotal() {
+                var valorDiaria = parseFloat(document.getElementById("valorDiaria").value);
+                var quantidadeDias = parseInt(document.getElementById("quantidadeDias").value);
+                var total = valorDiaria * quantidadeDias;
+    
+                // Verifica quais comodidades foram selecionadas e adiciona o custo adicional
+                if (document.getElementById("banheiro").checked) {
+                    total += 30; // Supondo um custo adicional de R$20 por banheiro
+                }
+                if (document.getElementById("banheira").checked) {
+                    total += 100; // Supondo um custo adicional de R$30 por banheira
+                }
+                if (document.getElementById("tv").checked) {
+                    total += 40; // Supondo um custo adicional de R$15 por TV
+                }
+                if (document.getElementById("internet").checked) {
+                    total += 80; // Supondo um custo adicional de R$10 por Internet
+                }
+    
+                alert("O total da reserva é: R$ " + total.toFixed(2));
+            }
+        </script>
+    </div>
+
+<!-- Exercicio 7 -->
+
+    <div>
+        <h2>Comente sobre a Corrupção no Brasil</h2>
+        <textarea id="comentario" rows="8" cols="50" placeholder="Digite o texto aqui..."></textarea><br><br>
+
+        <button onclick="abrirNovaJanela()">Enviar</button>
+        <script>
+            function abrirNovaJanela() {
+                var comentario = document.getElementById("comentario").value;
+
+                // Abre uma nova janela com a mensagem de agradecimento
+                var novaJanela = window.open("", "_blank");
+                novaJanela.document.write("<h2>Obrigado por enviar seu comentário</h2>");
+            }
+        </script>
+    </div>
+</body>
+</html>
